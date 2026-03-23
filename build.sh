@@ -46,7 +46,9 @@ cp arch/x86/boot/bzImage ../iso/boot
 cd ..
 
 if [ ! -d "busybox" ]; then
-    git clone --depth 1 https://git.busybox.net/busybox
+    wget https://busybox.net/downloads/busybox-1.37.0.tar.bz2
+    tar -xvf busybox-1.37.0.tar.bz2
+    mv busybox-1.37.0 busybox
 fi
 
 cd busybox
