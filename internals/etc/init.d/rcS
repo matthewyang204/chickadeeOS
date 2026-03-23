@@ -6,6 +6,7 @@ echo "root:root" | chpasswd
 
 mount -t proc none /proc
 mount -t tmpfs none /tmp
+mount -t devtmpfs devtmpfs /dev
 
 mkdir -p /var/run /var/log /var/tmp
 mkdir -p /etc/network /etc/ssh
