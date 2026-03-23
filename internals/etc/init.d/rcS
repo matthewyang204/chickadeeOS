@@ -1,8 +1,12 @@
 #!/bin/sh
-echo "root:x:0:0:root:/root:/bin/sh" > /etc/passwd
-echo "root:x:0:" > /etc/group
-echo "root::10933:0:99999:7:::" > /etc/shadow
-echo "root:root" | chpasswd
+
+if [ ! -f "/etc/firstboot" ]; then 
+    echo "root:x:0:0:root:/root:/bin/sh" > /etc/passwd
+    echo "root:x:0:" > /etc/group
+    echo "root::10933:0:99999:7:::" > /etc/shadow
+    echo "root:root" | chpasswd
+    touch /etc/firstboot
+fi
 
 mount -t proc none /proc
 mount -t tmpfs none /tmp
