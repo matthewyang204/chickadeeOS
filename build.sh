@@ -34,7 +34,9 @@ fi
 mkdir -p boot-files iso iso/boot iso/boot/grub
 
 if [ ! -d "linux" ]; then
-    git clone --depth 1 https://github.com/torvalds/linux.git
+    wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.xz
+    tar -xvf linux-6.19.9.tar.xz
+    mv linux-6.19.9 linux
 fi
 
 cd linux
