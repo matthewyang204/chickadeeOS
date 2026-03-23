@@ -1,12 +1,12 @@
-# NateOS
+# chickadeeOS
 
-NateOS is a lightweight Linux distribution that you can build from source. I made NateOS for fun and obviously not for serious stuffs.
+chickadeeOS is a lightweight Linux distribution that you can build from source. I made chickadeeOS for fun and obviously not for serious stuffs.
 
-https://github.com/nthnn/NateOS/assets/90981832/9730782a-9d5a-4625-972d-35414ed1624b
+https://github.com/nthnn/chickadeeOS/assets/90981832/9730782a-9d5a-4625-972d-35414ed1624b
 
 ## What's in the box?
 
-The NateOS distro includes the following programs and packages:
+The chickadeeOS distro includes the following programs and packages:
 
 - [bottom](https://github.com/ClementTsang/bottom) - Yet another cross-platform graphical process/system monitor.
 - [broot](https://github.com/Canop/broot) - Get an overview of a directory, even a big one.
@@ -25,12 +25,12 @@ The NateOS distro includes the following programs and packages:
 
 To get started in Ubuntu, follow the steps below.
 
-1. **Clone the Repository**: Pull the NateOS git repository to your local machine.
+1. **Clone the Repository**: Pull the chickadeeOS git repository to your local machine.
 
     ```bash
-    # Clone NateOS build script
-    git clone --depth 1 https://github.com/nthnn/NateOS
-    cd NateOS
+    # Clone chickadeeOS build script
+    git clone --depth 1 https://github.com/nthnn/chickadeeOS
+    cd chickadeeOS
     ```
 
 2. **Install `rustup`**: Install `rustup` to manage the Rust toolchain. Follow the instructions provided [here](https://www.rust-lang.org/tools/install). Then add the Linux MUSL target for Rust compiler.
@@ -49,7 +49,7 @@ To get started in Ubuntu, follow the steps below.
     sudo su
     ```
 
-4. **Build NateOS**: Run the build script to compile all necessary binaries, including the Linux kernel and BusyBox. Execute the following command:
+4. **Build chickadeeOS**: Run the build script to compile all necessary binaries, including the Linux kernel and BusyBox. Execute the following command:
 
     ```bash
     chmod +x build.sh
@@ -60,7 +60,7 @@ To get started in Ubuntu, follow the steps below.
 
 ### Emulating with QEMU
 
-After successfully building NateOS, you can emulate it using QEMU. Ensure that QEMU, especially `qemu-system-x86_64`, is installed on your system. Run the following command:
+After successfully building chickadeeOS, you can emulate it using QEMU. Ensure that QEMU, especially `qemu-system-x86_64`, is installed on your system. Run the following command:
 
 ```bash
 sudo chmod +x emulate.sh

@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright 2024 (c) Nathanne Isip
-# NateOS (https://github.com/nthnn/NateOS)
+# chickadeeOS (https://github.com/nthnn/chickadeeOS)
 
 qemu-system-x86_64 \
     -m 512M \
