@@ -34,6 +34,10 @@ echo "chickadeeOS" > /etc/hostname
 hostname $(cat /etc/hostname)
 clear
 
+if [ ! -f "/etc/firstboot" ]; then
+    touch /etc/firstboot
+fi
+
 # echo -e $(cat /etc/matthewyang204.ascii) | cat
 cat /etc/motd
 echo "chickadeeOS (version 0.0.1) [" $(uname -r) "]"
