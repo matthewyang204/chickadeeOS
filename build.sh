@@ -3,21 +3,21 @@
 # Copyright 2026 (c) Matthew Yang (杨家明)
 # chickadeeOS (https://github.com/matthewyang204/chickadeeOS)
 
-apt install        \
-    bzip2          \
-    git            \
-    make           \
-    gcc            \
-    libncurses-dev \
-    flex           \
-    bison          \
-    bc             \
-    cpio           \
-    libelf-dev     \
-    libssl-dev     \
-    cargo          \
-    musl-tools     \
-    xorriso
+# apt install        \
+#     bzip2          \
+#     git            \
+#     make           \
+#     gcc            \
+#     libncurses-dev \
+#     flex           \
+#     bison          \
+#     bc             \
+#     cpio           \
+#     libelf-dev     \
+#     libssl-dev     \
+#     cargo          \
+#     musl-tools     \
+#     xorriso
 
 if [ ! -d "minos-static" ]; then
     git clone --depth 1 https://github.com/minos-org/minos-static.git
