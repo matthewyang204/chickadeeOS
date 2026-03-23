@@ -1,5 +1,6 @@
 #!/bin/sh
 # Copyright 2024 (c) Nathanne Isip
+# Copyright 2026 (c) Matthew Yang (杨家明)
 # chickadeeOS (https://github.com/matthewyang204/chickadeeOS)
 
 apt install        \
