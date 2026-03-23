@@ -146,6 +146,6 @@ rm linuxrc
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../../iso/boot/initramfs.cpio.gz
 cd ../..
 cp internals/grub.cfg iso/boot/grub
-grub-mkrescue -o nate_os.iso iso/
+grub-mkrescue -o chickadee_os.iso iso/
 
-echo "Bootable live ISO image created successfully as nate_os.iso"
+echo "Bootable live ISO image created successfully as chickadee_os.iso"

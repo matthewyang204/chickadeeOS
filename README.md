@@ -56,7 +56,7 @@ To get started in Ubuntu, follow the steps below.
     ./build.sh
     ```
 
-    This will generate `nate_os.iso` in the current working directory upon successful execution.
+    This will generate `chickadee_os.iso` in the current working directory upon successful execution.
 
 ### Emulating with QEMU
 
