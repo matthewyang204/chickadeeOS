@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright 2024 (c) Nathanne Isip
-# chickadeeOS (https://github.com/nthnn/chickadeeOS)
+# chickadeeOS (https://github.com/matthewyang204/chickadeeOS)
 
 apt install        \
     bzip2          \

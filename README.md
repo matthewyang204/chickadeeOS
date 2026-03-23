@@ -2,7 +2,7 @@
 
 chickadeeOS is a lightweight Linux distribution that you can build from source. I made chickadeeOS for fun and obviously not for serious stuffs.
 
-https://github.com/nthnn/chickadeeOS/assets/90981832/9730782a-9d5a-4625-972d-35414ed1624b
+https://github.com/matthewyang204/chickadeeOS/assets/90981832/9730782a-9d5a-4625-972d-35414ed1624b
 
 ## What's in the box?
 
@@ -29,7 +29,7 @@ To get started in Ubuntu, follow the steps below.
 
     ```bash
     # Clone chickadeeOS build script
-    git clone --depth 1 https://github.com/nthnn/chickadeeOS
+    git clone --depth 1 https://github.com/matthewyang204/chickadeeOS
     cd chickadeeOS
     ```
 

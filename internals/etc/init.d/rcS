@@ -30,7 +30,7 @@ echo "chickadeeOS" > /etc/hostname
 hostname $(cat /etc/hostname)
 clear
 
-echo -e $(cat /etc/nthnn.ascii) | cat
+echo -e $(cat /etc/matthewyang204.ascii) | cat
 echo "chickadeeOS (version 0.0.1) [" $(uname -r) "]"
 echo
 
