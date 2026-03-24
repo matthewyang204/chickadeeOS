@@ -3,7 +3,8 @@
 # Copyright 2026 (c) Matthew Yang (杨家明)
 # chickadeeOS (https://github.com/matthewyang204/chickadeeOS)
 
-apt install        \
+# Core requirements
+apt install -y     \
     bzip2          \
     git            \
     make           \
@@ -18,6 +19,15 @@ apt install        \
     cargo          \
     musl-tools     \
     xorriso
+
+# Install ncurses
+apt install -y \
+    libncurses-dev \
+    libncurses6 \
+    libncursesw6 \
+    ncurses-base \
+    ncurses-bin \
+    ncurses-term
 
 if [ ! -d "minos-static" ]; then
     git clone --depth 1 https://github.com/minos-org/minos-static.git
