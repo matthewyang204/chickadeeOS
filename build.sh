@@ -155,6 +155,9 @@ rm linuxrc
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../../iso/boot/initramfs.cpio.gz
 cd ../..
 cp internals/grub.cfg iso/boot/grub
+cp -r iso/boot boot-files/initramfs/
+rm iso/boot/initramfs.cpio.gz
+cd boot-files/initramfs && find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../../iso/boot/initramfs.cpio.gz && cd ../../
 grub-mkrescue -o chickadee_os.iso iso/
 
 echo "Bootable live ISO image created successfully as chickadee_os.iso"
