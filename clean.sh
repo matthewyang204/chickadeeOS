@@ -12,6 +12,7 @@ rm -rf \
     hex \
     iso \
     linux \
+    linux-* \
     loc \
     lpm \
     minos-static \
@@ -26,3 +27,4 @@ rm -rf \
     chickadee_os.iso \
     opt-nodejs-0.8.18-1.tar.xz \
     python3.2-static-raw.githubusercontent.com.tar.xz \
+    linux-*.tar.xz
