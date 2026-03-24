@@ -29,6 +29,8 @@ apt install -y \
     ncurses-bin \
     ncurses-term
 
+bash ./incrementalClean.sh
+
 if [ ! -d "minos-static" ]; then
     git clone --depth 1 https://github.com/minos-org/minos-static.git
 fi
