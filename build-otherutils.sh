@@ -8,7 +8,7 @@ if [ ! -d "nano" ]; then
     mv nano-8.7.1 nano
 fi
 cd nano
-./configure --prefix=../boot-files/initramfs/usr --enable-static --disable-shared --disable-libmagic --enable-utf8
+./configure --prefix=$(pwd)/../boot-files/initramfs/usr --enable-static --disable-shared --disable-libmagic --enable-utf8
 make -j $(nproc)
 make install
 cd ..
