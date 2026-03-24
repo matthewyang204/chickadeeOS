@@ -144,6 +144,9 @@ cd boot-files/initramfs
 wget -O bin/pfetch https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch
 chmod +x bin/pfetch
 
+# Build other utilities that are useful
+./build-otherutils.sh
+
 mkdir -p etc dev man proc sys tmp
 mkdir -p etc/init.d
 
