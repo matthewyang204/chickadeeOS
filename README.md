@@ -75,3 +75,6 @@ To remove all downloaded files and Git repositories created by the `build.sh` sc
 sudo chmod +x clean.sh
 ./clean.sh
 ```
+
+## License
+chickadeeOS itself is MIT licensed unless the piece says otherwise. The subcomponents (kernel, userland, etc) are under separate licenses declared in their source code.
