@@ -7,6 +7,7 @@ rm -rf \
     bottom \
     broot \
     busybox \
+    busybox-* \
     curl \
     gcc-4.6.1-2 \
     hex \
@@ -27,4 +28,5 @@ rm -rf \
     chickadee_os.iso \
     opt-nodejs-0.8.18-1.tar.xz \
     python3.2-static-raw.githubusercontent.com.tar.xz \
-    linux-*.tar.xz
+    linux-*.tar.xz \
+    busybox-*.tar.bz2

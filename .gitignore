@@ -2,6 +2,7 @@ boot-files/
 bottom/
 broot/
 busybox/
+busybox-*/
 curl/
 eza/
 gcc-4.6.1-2/
@@ -24,5 +25,6 @@ python3.2-static-raw.githubusercontent.com.tar.xz
 gcc-4.6.1-2.tar.xz
 vim.tar.xz
 linux-*.tar.xz
+busybox-*.tar.bz2
 
 chickadee_os.iso
