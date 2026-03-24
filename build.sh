@@ -23,10 +23,10 @@ if [ ! -d "minos-static" ]; then
     git clone --depth 1 https://github.com/minos-org/minos-static.git
 fi
 
-if ! command -v rustup &> /dev/null; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    source $HOME/.cargo/env
-fi
+# if ! command -v rustup &> /dev/null; then
+    # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    # source $HOME/.cargo/env
+# fi
 
 if ! rustup target list | grep -q "x86_64-unknown-linux-musl (installed)"; then
     rustup target add x86_64-unknown-linux-musl
