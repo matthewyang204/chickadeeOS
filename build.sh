@@ -51,7 +51,7 @@ cp arch/x86/boot/bzImage ../iso/boot
 cd ..
 
 if [ ! -d "busybox" ]; then
-    if [ ! -f "busybox-1.37.0.tar.bz2" ]
+    if [ ! -f "busybox-1.37.0.tar.bz2" ]; then
         wget https://busybox.net/downloads/busybox-1.37.0.tar.bz2
     fi
     tar -xvf busybox-1.37.0.tar.bz2
