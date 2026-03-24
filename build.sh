@@ -43,8 +43,10 @@ if [ ! -d "linux" ]; then
 fi
 
 cd linux
-make defconfig
-make -j $(nproc)
+if [ ! -f "arch/x86/boot/bzImage" ]; then
+   make defconfig
+   make -j $(nproc)
+fi
 cp arch/x86/boot/bzImage ../iso/boot
 cd ..
 
