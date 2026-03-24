@@ -29,4 +29,6 @@ rm -rf \
     opt-nodejs-0.8.18-1.tar.xz \
     python3.2-static-raw.githubusercontent.com.tar.xz \
     linux-*.tar.xz \
-    busybox-*.tar.bz2
+    busybox-*.tar.bz2 \
+    nano \
+    nano-*
