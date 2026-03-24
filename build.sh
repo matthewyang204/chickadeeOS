@@ -148,8 +148,10 @@ mkdir -p etc dev man proc sys tmp
 mkdir -p etc/init.d
 
 cp -r ../../internals/etc/* etc/
+cp -r ../../internals/sbin/* sbin/
 ln -s etc/init.d/rcS init
 chmod +x etc/init.d/rcS init
+chmod +x sbin/*
 
 rm linuxrc
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../../iso/boot/initramfs.cpio.gz
