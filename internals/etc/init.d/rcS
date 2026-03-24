@@ -5,7 +5,6 @@ if [ ! -f "/etc/firstboot" ]; then
     echo "root:x:0:" > /etc/group
     echo "root::10933:0:99999:7:::" > /etc/shadow
     echo "root:root" | chpasswd
-    touch /etc/firstboot
 fi
 
 mount -t proc none /proc
@@ -40,6 +39,8 @@ dmesg -n 3
 if [ ! -f "/etc/firstboot" ]; then
     echo "chickadeeOS" > /etc/hostname
     hostname $(cat /etc/hostname)
+
+    touch /etc/firstboot
 fi
 
 clear
