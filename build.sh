@@ -35,7 +35,9 @@ fi
 mkdir -p boot-files iso iso/boot iso/boot/grub
 
 if [ ! -d "linux" ]; then
-    wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.xz
+    if [ ! -f "linux-6.19.9.tar.xz" ]; then
+        wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.19.9.tar.xz
+    fi
     tar -xvf linux-6.19.9.tar.xz
     mv linux-6.19.9 linux
 fi
@@ -47,7 +49,9 @@ cp arch/x86/boot/bzImage ../iso/boot
 cd ..
 
 if [ ! -d "busybox" ]; then
-    wget https://busybox.net/downloads/busybox-1.37.0.tar.bz2
+    if [ ! -f "busybox-1.37.0.tar.bz2" ]
+        wget https://busybox.net/downloads/busybox-1.37.0.tar.bz2
+    fi
     tar -xvf busybox-1.37.0.tar.bz2
     mv busybox-1.37.0 busybox
 fi
