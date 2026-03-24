@@ -161,6 +161,7 @@ cd -
 
 mkdir -p etc dev man proc sys tmp
 mkdir -p etc/init.d
+mkdir -p usr/share/terminfo/l
 
 cp -r ../../internals/etc/* etc/
 cp -r ../../internals/sbin/* sbin/
