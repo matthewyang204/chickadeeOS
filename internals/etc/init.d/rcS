@@ -18,25 +18,31 @@ mkdir -p /etc/network /etc/ssh
 mknod /dev/random c 1 8
 mknod /dev/urandom c 1 9
 
-ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+if [ ! -f "/etc/firstboot" ]; then
+    ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+fi
+
 export PATH=$PATH:/usr/libexec/gcc/i586-linux-uclibc/4.6.1:/opt/nodejs/bin
 export PS1='[\[\e[1;33m\]\u@\h\[\e[0m\]] (\[\e[1;36m\]$(date "+%T")\[\e[0m\]) \[\e[1;34m\]\w\[\e[0m\]\[\e[1;32m\]\$\[\e[0m\] '
 
-echo "auto eth0" >> /etc/network/interfaces
-echo "iface eth0 inet dhcp" >> /etc/network/interfaces
+if [ ! -f "/etc/firstboot" ]; then
+    echo "auto eth0" >> /etc/network/interfaces
+    echo "iface eth0 inet dhcp" >> /etc/network/interfaces
+fi
 
-echo "nameserver 8.8.8.8" > /etc/resolv.conf
-echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+if [ ! -f "/etc/firstboot" ]; then
+    echo "nameserver 8.8.8.8" > /etc/resolv.conf
+    echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+fi
 
 dmesg -n 3
 
-echo "chickadeeOS" > /etc/hostname
-hostname $(cat /etc/hostname)
-clear
-
 if [ ! -f "/etc/firstboot" ]; then
-    touch /etc/firstboot
+    echo "chickadeeOS" > /etc/hostname
+    hostname $(cat /etc/hostname)
 fi
+
+clear
 
 # echo -e $(cat /etc/matthewyang204.ascii) | cat
 cat /etc/motd
