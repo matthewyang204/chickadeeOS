@@ -2,8 +2,6 @@
 
 chickadeeOS is a lightweight Linux distribution that you can build from source. I made chickadeeOS for fun and obviously not for serious stuffs.
 
-https://github.com/matthewyang204/chickadeeOS/assets/90981832/9730782a-9d5a-4625-972d-35414ed1624b
-
 ## What's in the box?
 
 The chickadeeOS distro includes the following programs and packages:
