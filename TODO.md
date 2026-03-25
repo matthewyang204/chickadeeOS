@@ -5,4 +5,4 @@
 - [ ] (Maybe) Get nano & htop working without needing additional packages and stuff
 
 # 0.0.1
-- [ ] Just go ahead and release it
+- [X] Just go ahead and release it
