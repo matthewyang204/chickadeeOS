@@ -167,7 +167,7 @@ mkdir -p usr/share/terminfo/l
 
 cp -r ../../internals/etc/* etc/
 cp -r ../../internals/sbin/* sbin/
-tic ../../internals/linux.ti -o usr/share/terminfo/l
+tic ../../internals/linux.ti -o usr/share/terminfo/l/linux
 ln -s etc/init.d/rcS init
 chmod +x etc/init.d/rcS init
 chmod +x sbin/*
