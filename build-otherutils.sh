@@ -12,3 +12,15 @@ CFLAGS=-static LDFLAGS=-static ./configure --prefix=$(pwd)/../boot-files/initram
 make -j $(nproc) CFLAGS=-static LDFLAGS=-static 
 make install
 cd ..
+
+if [ ! -d "micro" ]; then
+    if [ ! -f "micro-2.0.15.zip" ]; then
+        wget https://github.com/micro-editor/micro/archive/refs/tags/v2.0.15.zip
+    fi
+    unzip micro-2.0.15.zip
+    mv micro-2.0.15 micro
+fi
+cd micro
+go build -o micro ./cmd/micro
+cp micro ../boot-files/initramfs/usr/bin/
+cd ..
