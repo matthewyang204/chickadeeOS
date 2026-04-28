@@ -24,7 +24,7 @@ if [ ! -d "micro" ]; then
 fi
 cd micro
 echo "Compiling micro..."
-go build -o micro -buildvcs=false ./cmd/micro
+CGO_ENABLED=0 go build -o micro -buildvcs=false ./cmd/micro
 echo "Staging micro to destroot..."
 cp micro ../boot-files/initramfs/usr/bin/
 cd ..
