@@ -15,12 +15,16 @@ cd ..
 
 if [ ! -d "micro" ]; then
     if [ ! -f "micro-2.0.15.zip" ]; then
+        echo "Downloading micro..."
         wget https://github.com/micro-editor/micro/archive/refs/tags/v2.0.15.zip
     fi
-    unzip micro-2.0.15.zip
+    echo "Extracting micro..."
+    unzip v2.0.15.zip
     mv micro-2.0.15 micro
 fi
 cd micro
-go build -o micro ./cmd/micro
+echo "Compiling micro..."
+go build -o micro -buildvcs=false ./cmd/micro
+echo "Staging micro to destroot..."
 cp micro ../boot-files/initramfs/usr/bin/
 cd ..
