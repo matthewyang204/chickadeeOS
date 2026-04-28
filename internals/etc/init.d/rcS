@@ -51,4 +51,6 @@ cat /etc/motd
 echo "chickadeeOS (version 0.0.1) [" $(uname -r) "]"
 echo
 
-/bin/sh +m
+# /bin/sh +m
+exec cttyhack sh
+
