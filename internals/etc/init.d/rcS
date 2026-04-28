@@ -52,5 +52,5 @@ echo "chickadeeOS (version 0.0.1) [" $(uname -r) "]"
 echo
 
 # /bin/sh +m
-exec cttyhack sh
+exec cttyhack /bin/sh
 
